@@ -47,12 +47,34 @@ body {
   background-color: #EFFFA9;
   height: 200px;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #main #card #card__text {
   font-size: 90px;
-  line-height: 200px;
 }
 #main #container {
   height: calc(100% - 200px);
+}
+#main #container #text-wrapper {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#main #container #text-wrapper h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+#main #container #text-wrapper #guess-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+#main #container #input-wrapper {
+  height: 50%;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

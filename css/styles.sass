@@ -9,6 +9,11 @@ $red: #F85959
     font-size: 16px
     font-weight: 400
 
+@mixin center()
+    display: flex
+    justify-content: center
+    align-items: center
+
 *
     font-family: "Poppins", serif !important
 
@@ -18,9 +23,7 @@ body
     max-height: 100vh
     min-width: 100vw
     max-width: 100vw
-    display: flex
-    justify-content: center
-    align-items: center
+    @include center
 
 .text
     @include text
@@ -39,9 +42,7 @@ body
     background-color: $white
     height: 550px
     width: 380px
-    display: flex
-    justify-content: center
-    align-items: center
+    @include center
 
     #wrapper
         height: calc( 100% - 30px )
@@ -51,12 +52,30 @@ body
         background-color: $yellow
         height: 200px
         width: 100%
-        text-align: center
+        @include center
 
         #card__text
             font-size: 90px
-            line-height: 200px
 
     #container
-        // background-color: blue
         height: calc( 100% - 200px )
+
+        #text-wrapper
+            // background-color: blue
+            height: 50%
+            width: 100%
+            @include center
+            flex-direction: column
+
+            h1 
+                font-size: 28px
+                font-weight: 600
+
+            #guess-text
+                @include text
+                margin-top: 15px
+
+        #input-wrapper
+            // background-color: red
+            height: 50%
+            width: 100%
