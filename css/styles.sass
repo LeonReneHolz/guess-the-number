@@ -1,0 +1,62 @@
+// COLORS
+$white: #FFF
+$yellow: #EFFFA9
+$green: #6EDE69
+$red: #F85959
+
+// MIXINS
+@mixin text()
+    font-size: 16px
+    font-weight: 400
+
+*
+    font-family: "Poppins", serif !important
+
+body
+    background-color: $yellow
+    min-height: 100vh
+    max-height: 100vh
+    min-width: 100vw
+    max-width: 100vw
+    display: flex
+    justify-content: center
+    align-items: center
+
+.text
+    @include text
+
+.scores
+    position: absolute
+    top: 50px
+
+#score
+    left: 50px
+
+#tries
+    right: 50px
+
+#main
+    background-color: $white
+    height: 550px
+    width: 380px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    #wrapper
+        height: calc( 100% - 30px )
+        width: calc( 100% - 30px )
+
+    #card
+        background-color: $yellow
+        height: 200px
+        width: 100%
+        text-align: center
+
+        #card__text
+            font-size: 90px
+            line-height: 200px
+
+    #container
+        // background-color: blue
+        height: calc( 100% - 200px )
