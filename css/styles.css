@@ -33,8 +33,8 @@ body {
 
 #main {
   background-color: #FFF;
-  height: 550px;
-  width: 380px;
+  height: 500px;
+  width: 370px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,7 @@ body {
 }
 #main #card {
   background-color: #EFFFA9;
-  height: 200px;
+  height: 180px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -55,10 +55,10 @@ body {
   font-size: 90px;
 }
 #main #container {
-  height: calc(100% - 200px);
+  height: calc(100% - 180px);
 }
 #main #container #text-wrapper {
-  height: 50%;
+  height: 60%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -75,6 +75,37 @@ body {
   margin-top: 15px;
 }
 #main #container #input-wrapper {
-  height: 50%;
+  height: 40%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#main #container #input-wrapper #number-input {
+  background-color: #EFFFA9;
+  height: calc(55% - 7.5px);
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+}
+#main #container #input-wrapper #button-wrapper {
+  height: calc(45% - 7.5px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#main #container #input-wrapper #button-wrapper .button {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #EFFFA9;
+  border: none;
+  height: 100%;
+  width: calc(50% - 7.5px);
+  line-height: 100%;
+  font-weight: 500;
+  transition: 250ms;
+}
+#main #container #input-wrapper #button-wrapper .button:hover {
+  cursor: pointer;
+  font-size: 17px;
 }/*# sourceMappingURL=styles.css.map */
