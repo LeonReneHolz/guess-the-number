@@ -87,6 +87,11 @@ body {
   width: 100%;
   border: none;
   box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+}
+#main #container #input-wrapper #number-input:focus {
+  outline: none;
 }
 #main #container #input-wrapper #button-wrapper {
   height: calc(45% - 7.5px);
